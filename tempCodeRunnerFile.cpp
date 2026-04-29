@@ -1,1 +1,1 @@
- cout << s[0] << s[1] << s[2] << "test";
+ cout << "printing sum" << sum << endl;
