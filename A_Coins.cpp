@@ -15,17 +15,23 @@ int main()
 
     while (t--)
     {
-        int a, b;
+        ll a, b;
         cin >> a >> b;
-        int i = 1;
-        int cnt = 0;
-   
-        if (cnt)
+
+        if (b % 2 == 1)
+
         {
             cout << "YES" << endl;
         }
         else
-            cout << "NO" << endl;
+        {
+            if (a % 2 == 0)
+            {
+                cout << "YES" << endl;
+            }
+            else
+                cout << "NO" << endl;
+        }
     }
 
     return 0;
