@@ -16,22 +16,24 @@ int main()
         int n;
         cin >> n;
         int ar[n];
-        int cnt = 0;
+
+        int x;
+        int mx = 0, cnt = 0;
         for (int i = 0; i < n; i++)
         {
-            cin >> ar[i];
-        }
-        for (int i = 0; i < n; i++)
-        {
-            if (ar[i] == 0)
+            cin >> x;
+            if (x == 0)
             {
                 cnt++;
-                if (ar[i] == 1)
-                {
-                    break;
-                }
+                mx = max(mx, cnt);
+            }
+            else
+            {
+                cnt = 0;
             }
         }
+
+        cout << mx << endl;
     }
 
     return 0;
